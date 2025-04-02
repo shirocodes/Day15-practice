@@ -17,9 +17,11 @@ submitData() is a JavaScript function that sends a user's name and email to a mo
 
 3. Functionality 
 - Code preview 
+<!-- add this in index.js -->
+const body = document.querySelector("body");
 
-const body = document.querySelector("body")
 function submitData(name, email) {
+
     return fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {
